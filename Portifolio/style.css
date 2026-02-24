@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=League+Spartan:wght@100..900&display=swap');
+
+/* --- Estilo base --- */
+body {
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  background: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background: linear-gradient(135deg, #6d0b34, #531d83);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+p {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.2rem;}
+
+#pixel {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #8057a3;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #6d0b34;
+}
+
+/* Lista de habilidades */
+#habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+#habilidades li {
+  background: #ecdcee;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Projetos */
+.projeto {
+  background: white;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  opacity: 0; /* para animação */
+  transform: translateY(20px);
+  transition: all 0.6s ease;
+}
+
+.projeto.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.projeto h3 {
+  margin-top: 0;
+}
+
+.projeto a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #6d0b34;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projeto a:hover {
+  text-decoration: underline;
+}
+
+/* Filtro */
+#projetos select {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #6d0b34, #531d83);
+  color: white;
+}
+
+.social {
+  margin-top: 1rem;
+}
+
+.social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #4a90e2; /* muda a cor ao passar o mouse */
+}
+
+
+/* --- Dark Mode --- */
+body.dark {
+  background: linear-gradient(135deg, #000000, #290647);
+  color: #eee;
+}
+
+body.dark header {
+  background: linear-gradient(135deg, #2b0313, #290647);
+}
+
+body.dark h2 {
+  border-bottom: 2px solid #eee;
+  color: #ccbdda;
+}
+
+body.dark #habilidades li {
+  background: #333;
+}
+
+body.dark .projeto {
+  background: #333;
+  color: #eee;
+}
+
+body.dark .projeto a {
+  color: #9f60b8;
+}
+
+body.dark footer {
+    background: rgb(26, 25, 25);
+}
+
+/* Botão de alternar tema */
+button {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #9f60b8;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 1;
+}
+
+button:hover {
+  background: #8527aa;
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .projeto {
+    padding: 1rem;
+  }
+}
