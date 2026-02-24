@@ -22,9 +22,7 @@ Este portfólio serve como uma vitrine dos meus conhecimentos em **HTML, CSS e J
 
 ## ✨ Funcionalidades
 - Alternar entre tema claro e escuro 🌙  
-- Animações ao rolar a página  
-- Filtro de projetos (em desenvolvimento)  
-- Validação de formulário de contato  
+- Animações ao rolar a página   
 
 ---
 
@@ -47,4 +45,4 @@ A página possui as seguintes seções obrigatórias:
 ## ⚙️ Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/analuBrito/seu-repositorio.git
+   git clone https://github.com/analuBrito/Atividade-Extra-Senai.git
